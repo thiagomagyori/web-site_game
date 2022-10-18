@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CDN bootstrap-->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--FONTES GOOGLE-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <!-- CSS interno -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Game Mania</title>
+</head>
+
+
+<body>
+            
+  <div class="container"> <!-- Esse container vai delimitar o tamanho maximo da tela-->
+                              <header>
+                                  <nav>
+                                    <div class="menu-container">
+                                    <img id="logo-menu" src="img/logo.png" alt="logo-tipo"> Game Mania
+                                    <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">PlayStation</a></li>
+                                    <li><a href="#">Xbox</a></li>
+                                    <li><a href="#">Colecionáveis</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                    <li><a href="#">Logar</a></li>
+                                    <li><a href="#">|</a></li>
+                                    <li><a href="#">Criar conta</a></li>
+                                    </ul>
+                                    </div>   
+                                 </nav>
+                              </header> <!--FIM HEADER-->    
+
+    <main> <!--Conteudo principal-->
+                  
+                                      <!--CARROSEL INICIO--> 
+                               <div class="aria-carrosel">
+
+                                          <div id="conteudo-slider" class="carousel slide" data-bs-ride="carousel"> <!--dentro dessa div vai ficar todo conteudo do nosso carrosel como imagens, botão etc-->
+                                                
+                                             <div id="indicadores" class="carousel-indicators">
+                                              <button type="button" data-bs-target="#conteudo-slider" data-bs-slide-to="0" class="active"></button> <!--data-bs-target class do bootstrap-->
+                                              <button type="button" data-bs-target="#conteudo-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                              <button type="button" data-bs-target="#conteudo-slider" data-bs-slide-to="2"></button>
+                                           </div>
+
+               <div id="imagens-slider" class="carousel-inner"> <!--Aqui criamos uma DIV que vai agrupar todas as IMG que vai ser usado no slider-->
+
+                 <div class="carousel-item active"> <!-- AQUI CHAMAMOS A carousel-item active DO BOOTSTRAP-->
+                    <img src="/img/recort-carrosel-01.jpg" class="d-block w-100" alt="imagem-banner destaque"> <!-- AQUI CHAMAMOS A CLASS class="d-block w-100" DO BOOTSTRAP QUE FAZ A IMAGEM OLCUPAR TELA TODA-->
+                 </div>
+
+                <div class="carousel-item">
+                     <img src="/img/recort-carrosel-02.jpg" class="d-block w-100" alt="imagem-banner destaque">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/img/recort-carrosel-03.jpg" class="d-block w-100" alt="imagem-banner destaque">
+                </div>
+
+ 
+                 <button type="button" class="carousel-control-prev" data-bs-target="#conteudo-slider" data-bs-slide="prev"> <!-- aqui usamos as clss para os botão pra ir pra frente e pra tras os botão de rolagem -->
+                    <span class="carousel-control-prev-icon">
+                    </span>
+                 </button>
+
+                     <button type="button" class="carousel-control-next" data-bs-target="#conteudo-slider" data-bs-slide="next">
+                         <span class="carousel-control-next-icon">
+                         </span>
+                     </button>
+
+                        </div> <!--FIM div imagens-slider-->
+                  </div> <!--FIM div conteudo-slider--> 
+            </div> <!--FIM aria-carrosel-->
+                                           <div id="titulo-pg">
+                                            <p>top mais acessados</p>
+                                            <a href="#">Ver mais</a> 
+                                           </div>
+                                    
+      <div class="grid-produtos"> <!--CARD 01-->
+                                  <div class="card" style="width: 18rem;">
+                                    <img src="img/card-01.jpg" class="card-img-top" alt="imagem-card produto">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Consoles</h5>
+                                    <p class="card-text">O PlayStation 4, ou PS4 (como é mais conhecido) é um video game da Sony lançado em 2013.</p>
+                                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                  </div>
+                                </div>
+                                           <!--CARD 02-->
+                                      <div class="card" style="width: 18rem;">
+                                           <img src="img/card-02.jpg" class="card-img-top" alt="imagem-card produto">
+                                        <div class="card-body">
+                                           <h5 class="card-title">Jogos</h5>
+                                           <p class="card-text">Battlefield 2042 é um jogo de tiro em primeira pessoa emocionante que marca o retorno da guerra dinâmica.</p>
+                                           <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                        </div>
+                                      </div>
+                    <!--CARD 03-->
+          <div class="card" style="width: 18rem;">
+              <img src="img/card-03.jpg" class="card-img-top" alt="imagem-card produto">
+            <div class="card-body">
+              <h5 class="card-title">Acessório Gamer</h5>
+              <p class="card-text">Os melhores acessórios para 'turbinar' seu computador, e ter uma experiência unica.</p>
+              <a href="#" class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div> 
+                        <!--CARD 04-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/card-04.jpg" class="card-img-top" alt="imagem-card produto">
+                      <div class="card-body">
+                        <h5 class="card-title">Funko Pop</h5>
+                        <p class="card-text">Feitos em vinil e inspirados em personagens de filmes e da cultura pop.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                      </div>
+                    </div> 
+      </div> <!--FIM grid-produtos--> 
+    </main>     
+   
+
+                
+                  <footer class="bg-light text-center border-top border-dark">
+                    <!-- Grid container -->
+                    <div class="container p-4 pb-0">
+                      <!-- Section: Form -->
+                      <section class="">
+                        <form action="">
+
+                          <!--Grid row-->
+                          <div class="row d-flex justify-content-center"> <!--display-flex com justify-content-center-->
+                            <!--Grid column-->
+                            <div class="col-auto">
+                              <p class="pt-2">
+                                <strong>Receba nossa Newsletter</strong> <!--texto em negrito-->
+                              </p>
+                            </div> <!--Fim row-->
+
+                            <!--Grid column-->
+                  
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                              <!-- Email input -->
+                              <div class="form-outline mb-4">
+                                <input type="email" id="form5Example27" class="form-control" />
+                                <label class="form-label" for="form5Example27">Email</label>
+                              </div>
+                            </div>
+                            <!--Grid column-->
+                  
+                            <!--Grid column-->
+                            <div class="col-auto">
+                              <!-- Submit button -->
+                              <button type="submit" class="btn btn-primary mb-4"> Assinar</button>
+                               
+                            </div>
+                            <!--Grid column-->
+                          </div>
+
+                          <!--Grid row-->
+                        </form>
+
+                      </section>
+                      <!-- Section: Form -->
+
+                    </div>
+                    <!-- Grid container -->
+                  
+                    <!-- Copyright -->
+                    <div class="text-center p-3" style="background-color: rgba(102, 102, 102, 0.658)">
+                      © 2022 Copyright
+                      <p>Game Mania</p>
+                    </div>
+                    <!-- Copyright -->
+                  </footer>
+                
+
+  
+      
+         <!--CDN JAVA DO BOOTSTRAP-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>      
+</body>
+
+</html>
