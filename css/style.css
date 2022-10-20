@@ -161,5 +161,27 @@ nav::after
     padding-top: 35px;
 }
 
+/*Resposive*/
+@media screen and (max-width: 1024px){
+.grid-produtos
+{
+width: 100%;
+display: inline-block; /*Display flex deixa os itens um ao lado do outro já o display inline-blok ele volta a ser elemento de bloco e fica um em baixo do outro*/
+
+
+}
+
+.card
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#card1, #card2, #card3, #card4
+{
+padding-bottom: 20px;
+}
+
+}
 
 
