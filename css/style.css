@@ -38,6 +38,11 @@ top 0 fala que ele vai ficar colocado do topo
 height fala que ele vai ter uma altura de 100px
 width fala que ele vai ter uma largura de 100% da tela
 z-index fala que ela vai sobressair todos elementos na tela não importa se eu ir pro final da página eu sempre vou ver o menu */
+.fa-solid
+{
+    display: none;
+}
+
 nav
 {
  position: fixed;
@@ -181,6 +186,74 @@ display: inline-block; /*Display flex deixa os itens um ao lado do outro já o d
 {
 padding-bottom: 20px;
 }
+
+}
+
+@media screen and (max-width: 974px) {
+
+.menu-container .bt-menu
+{
+    display: block !important; /*mostra o menu bar porém não é recomendado fazer desse jeito*/
+    
+}
+#contact, #divs, #account, #logo-menu, #login 
+{
+    display: none;
+    
+}
+
+html, body
+{
+    overflow-x: hidden; /*faz com que se algum elemento estourar o layout não cria uma barra de rolagem horizontal*/
+}
+
+.bt-menu
+{
+    display: block;
+    font-size: 3em;
+    color: #666;
+    position: absolute;
+    left: 0.8em;
+    top: 0.5em;
+    
+}
+
+.menu-container ul
+{
+    position: relative;    /*position: relative deixa a lista acetar top, bottom, left e right*/
+    top: 6.5em;                   /*joando a lista pra baixo*/
+    height: 3em;
+    line-height: 2.2em;
+    display: none;
+    float: none;
+    
+}
+
+.menu-container ul #home, #play, #xbox, #colec
+{
+    
+    background-color: rgba(169, 169, 169, 0.308); /*cor do fundo da letra*/
+    margin: 0;
+    float: none;
+    border-top: 1px solid darkslategray;
+    text-align: center;
+}
+
+.menu-container ul #home, #play, #xbox, #colec a
+{
+font-size: 1em;
+}
+
+.abrir-menu  /*foi criado a CLASS no css para poder chamar ela no js*/
+{
+display: block !important;  /*fala que a lista do menu tem que aparecer */
+} 
+
+
+
+
+
+
 
 }
 

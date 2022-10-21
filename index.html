@@ -7,7 +7,9 @@
     <!--CDN bootstrap-->
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!--FONTES GOOGLE-->
+<!--CDN icones-->
+<script src="https://kit.fontawesome.com/dd7fb49998.js" crossorigin="anonymous"></script>
+<!--FONTES GOOGLE-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <!-- CSS interno -->
     <link rel="stylesheet" href="/css/style.css">
@@ -23,16 +25,21 @@
                               <header>
                                   <nav>
                                     <div class="menu-container">
-                                    <img id="logo-menu" src="img/logo.png" alt="logo-tipo"> Game Mania
+                                      <a href="index.html"><img id="logo-menu" src="img/logo.png" alt="logo-tipo"></a>
+                                    
+                                    
+                                    <!--Class Menu mobile -->
+                                    <i class="fa-solid fa-bars bt-menu"></i>
+
                                     <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">PlayStation</a></li>
-                                    <li><a href="#">Xbox</a></li>
-                                    <li><a href="#">Colecionáveis</a></li>
-                                    <li><a href="#">Contato</a></li>
-                                    <li><a href="#">Logar</a></li>
-                                    <li><a href="#">|</a></li>
-                                    <li><a href="#">Criar conta</a></li>
+                                    <li id="home"><a href="#">Home</a></li>
+                                    <li id="play"><a href="#">PlayStation</a></li>
+                                    <li id="xbox"><a href="#">Xbox</a></li>
+                                    <li id="colec"><a href="#">Colecionáveis</a></li>
+                                    <li id="contact"><a href="#">Contato</a></li>
+                                    <li id="login"><a href="#">Minha conta</a></li>
+                                    <li id="divs"><a href="#">|</a></li>
+                                    <li id="account"><a href="#">Criar conta</a></li>
                                     </ul>
                                     </div>   
                                  </nav>
@@ -137,10 +144,8 @@
         </div>
 
       </div> <!--FIM grid-produtos--> 
-    </main>     
-   
 
-                
+    </main>     <!--FIm main-->
                   <footer class="bg-light text-center border-top border-dark">
                     <!-- Grid container -->
                     <div class="container p-4 pb-0">
@@ -196,6 +201,7 @@
                   </footer>
                 
 
+                  
         <!--CDN Jquey-->
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script src="/js/scripts.js"></script> <!--Linkando o arquivo Js na paina html-->
