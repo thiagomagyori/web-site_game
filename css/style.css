@@ -194,9 +194,9 @@ padding-bottom: 20px;
 .menu-container .bt-menu
 {
     display: block !important; /*mostra o menu bar porém não é recomendado fazer desse jeito*/
-    
+    cursor: pointer; /*muda o cursor do mouse ao passar em cima*/
 }
-#contact, #divs, #account, #logo-menu, #login 
+#contact, #divs, #account, #logo-menu
 {
     display: none;
     
@@ -229,10 +229,10 @@ html, body
     
 }
 
-.menu-container ul #home, #play, #xbox, #colec
+.menu-container ul #home, #play, #xbox, #colec, #login 
 {
     
-    background-color: rgba(169, 169, 169, 0.308); /*cor do fundo da letra*/
+    background-color: rgba(169, 169, 169, 0.904); /*cor do fundo da letra*/
     margin: 0;
     float: none;
     border-top: 1px solid darkslategray;
