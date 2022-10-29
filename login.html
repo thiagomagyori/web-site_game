@@ -15,10 +15,10 @@
 <!--Conaier para agrupar toodos itens da tela login-->
                 <main class="container">
                         <h2>Faça o seu login ou Crie uma conta</h2>
-                    <form action=""> <!--Formulario-->
+                    <form method="post" action="validar.php"> <!--Metodo POST chamando a pagina validar.php-->
 
                   <div class="campos"> <!--uma div para os campos-->
-                          <input type="email" name="useremail" id="useremail" placeholder="Entre com seu e-mail">
+                          <input type="text" name="useremail" id="useremail" placeholder="Entre com seu e-mail">
                           <div class="risco">
                           </div>
                          </div>
@@ -28,7 +28,7 @@
                             <div class="risco">
                         </div>
                     </div>
-                       <input type="submit" value="Entrar">
+                       <input type="submit" value="Entrar" id="entrar" name="entrar">
                     </form> 
                     <!--Fim formulario-->
 
