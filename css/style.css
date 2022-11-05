@@ -47,7 +47,6 @@ nav
 {
  position: fixed;
  top: 0;
- height: 100px;
  width: 100%;
  z-index: 1;
  background-color: #fff;
@@ -64,7 +63,7 @@ nav::after
 
 .menu-container
 {
-    max-width: 1200px; /*fala que o container vai oculpar 1200px de qualquer dela que for vizualizar ele*/
+    max-width: 1200px; /*fala que o container vai oculpar 1200px de qualquer tela que for vizualizar ele*/
     position: relative; /*Utilizando o position Relative o elemento passa a aceitar as propriedades Top, Bottom, Left e Right. Com elas você pode alterar o posicionamento do elemento.*/
     margin-right: auto; /*aqui a magica acontece centraliza o container ao centro */
     margin-left: auto;  /*pegando como base A DIV NAV RIGHT LEFT DIREITA E ESQUERDA AUTOMATICO*/
